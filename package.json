@@ -1,0 +1,45 @@
+{
+  "name": "dsh-macos-vision-ocr",
+  "version": "1.0.0",
+  "description": "Offline macOS Vision OCR tool for DeepSeek Harness",
+  "type": "module",
+  "main": "./host.mjs",
+  "exports": {
+    ".": "./host.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "host.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leozou320-ai/dsh-macos-vision-ocr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leozou320-ai/dsh-macos-vision-ocr/issues"
+  },
+  "homepage": "https://github.com/leozou320-ai/dsh-macos-vision-ocr#readme",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ocr",
+    "macos",
+    "vision"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
