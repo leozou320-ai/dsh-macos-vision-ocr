@@ -1,0 +1,6 @@
+- insert:
+    - id: dsh-macos-vision-ocr
+      name: dsh-macos-vision-ocr
+      config:
+        languages: [zh-Hans, zh-Hant, en-US]
+        maxOutputBytes: 1000000
